@@ -1,2 +1,4 @@
-# loadMakerDinamically
-Load Makers Dinamically
+# Load Makers Dinamically
+
+#### Links uteis
+https://javascript.info/object
