@@ -1,3 +1,4 @@
+var rootEndpoint = "https://api-relatai.herokuapp.com";
 
 $( document ).ready(function(){  
     initMap();
@@ -78,7 +79,7 @@ function findAllCategoriesAndYoursReports(){
             localStorage.setItem("response",JSON.stringify(this.responseText));     
         }   
     }; 
-    xhttp.open("GET", "https://relatai-api.herokuapp.com/categorias", true);
+    xhttp.open("GET", rootEndpoint + "/categorias", true);
     xhttp.send();
 
     let categories = JSON.parse(JSON.parse(localStorage.getItem("response")));
